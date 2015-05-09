@@ -7,6 +7,7 @@
   },
   "rules": {
     "semi": 2,
-    "quotes": [2, "single"]
+    "quotes": [2, "single"],
+    "curly": 0
   }
 }

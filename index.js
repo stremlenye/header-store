@@ -13,6 +13,8 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.get('/', function (req, res) {
   var headers = app.get(keys.headers);
   headers.push(req.headers);
+  if(headers.length > 10)
+    headers.shift();
   app.set(keys.headers, headers);
   res.send('PONG');
 });
