@@ -14,7 +14,12 @@ app.get('/', function (req, res) {
   var headers = app.get(keys.headers);
   headers.push(req.headers);
   app.set(keys.headers, headers);
-  res.send(headers);
+  res.send('PONG');
+});
+
+app.get('/headers', function (req, res) {
+  var headers = app.get(keys.headers);
+  res.json(headers);
 });
 
 var server = app.listen(app.get('port'), function () {
