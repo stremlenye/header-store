@@ -2,11 +2,17 @@
   "name": "header-history",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/stremlenye/header-store",
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https://github.com/stremlenye/header-store.git"
+  }
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Yuriy Ankudinov",
   "license": "ISC",
   "dependencies": {
     "express": "^4.12.3"
